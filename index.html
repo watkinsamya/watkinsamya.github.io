@@ -12,37 +12,33 @@
 </head>
 <body>
 
-  <!-- ── NAVIGATION ─────────────────────────────────────────────────────── -->
+  <!-- NAV -->
   <nav class="nav" id="nav">
     <a href="#hero" class="nav-logo">Amya Watkins</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#about" class="nav-link">About</a>
+      <a href="#about"    class="nav-link">About</a>
       <a href="#projects" class="nav-link">Work</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#skills"   class="nav-link">Skills</a>
+      <a href="#contact"  class="nav-link">Contact</a>
       <a href="amya-watkins-resume.pdf" target="_blank" class="nav-btn">Resume</a>
     </div>
   </nav>
 
-  <!-- ── HERO ───────────────────────────────────────────────────────────── -->
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-inner">
       <div class="hero-text">
         <p class="overline reveal">Software Engineer · Designer · Builder</p>
         <h1 class="hero-headline reveal delay-1">
-          I build things that<br>
-          look good <em>and</em><br>
-          work well.
+          I build things that<br>look good <em>and</em><br>work well.
         </h1>
-        <p class="hero-sub reveal delay-2">
-          I'm Amya — a software engineering student with a background in marketing and a passion for building products that feel as thoughtful as they are functional. I specialize in frontend development, Java-based backends, and turning ideas into real, working software.
-        </p>
+        <p class="hero-sub reveal delay-2">I'm Amya — a software engineering student with a background in marketing and a passion for building products that feel as thoughtful as they are functional. I specialize in frontend development, Java-based backends, and turning ideas into real, working software.</p>
         <div class="hero-btns reveal delay-3">
           <a href="#projects" class="btn-primary">See My Work</a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
+          <a href="#contact"  class="btn-outline">Get In Touch</a>
         </div>
         <div class="hero-badges reveal delay-4">
           <span class="badge">Ferris State University</span>
@@ -53,18 +49,18 @@
       <div class="hero-visual reveal delay-2">
         <div class="hero-blob"></div>
         <div class="hero-card">
-          <div class="hc-dot hc-dot--red"></div>
-          <div class="hc-dot hc-dot--yellow"></div>
-          <div class="hc-dot hc-dot--green"></div>
-          <div class="hc-code">
-            <span class="hc-comment">// currently building</span>
-            <span class="hc-keyword">const</span> <span class="hc-var">amya</span> = {
-            &nbsp;&nbsp;<span class="hc-prop">role</span>: <span class="hc-str">"SWE + Designer"</span>,
-            &nbsp;&nbsp;<span class="hc-prop">stack</span>: [<span class="hc-str">"React"</span>, <span class="hc-str">"Java"</span>],
-            &nbsp;&nbsp;<span class="hc-prop">building</span>: <span class="hc-str">"Path in Motion"</span>,
-            &nbsp;&nbsp;<span class="hc-prop">status</span>: <span class="hc-str">"open to work ✦"</span>
-            };
+          <div class="hc-dots">
+            <div class="hc-dot hc-dot--red"></div>
+            <div class="hc-dot hc-dot--yellow"></div>
+            <div class="hc-dot hc-dot--green"></div>
           </div>
+          <div class="hc-code"><span class="hc-comment">// currently building</span>
+<span class="hc-keyword">const</span> <span class="hc-var">amya</span> = {
+  <span class="hc-prop">role</span>: <span class="hc-str">"SWE + Designer"</span>,
+  <span class="hc-prop">stack</span>: [<span class="hc-str">"React"</span>, <span class="hc-str">"Java"</span>],
+  <span class="hc-prop">building</span>: <span class="hc-str">"Path in Motion"</span>,
+  <span class="hc-prop">status</span>: <span class="hc-str">"open to work ✦"</span>
+};</div>
         </div>
         <div class="hero-float hero-float--1">React</div>
         <div class="hero-float hero-float--2">Spring Boot</div>
@@ -77,27 +73,16 @@
     </div>
   </section>
 
-  <!-- ── ABOUT ──────────────────────────────────────────────────────────── -->
+  <!-- ABOUT -->
   <section class="about section-pad" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-visual">
-          <div class="about-img-frame">
-            <div class="about-initials">AW</div>
-          </div>
+          <div class="about-img-frame"><div class="about-initials">AW</div></div>
           <div class="about-stat-cards">
-            <div class="stat-card">
-              <span class="stat-num">3+</span>
-              <span class="stat-label">Years coding</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">7</span>
-              <span class="stat-label">Projects built</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-num">15+</span>
-              <span class="stat-label">Technologies</span>
-            </div>
+            <div class="stat-card"><span class="stat-num">3+</span><span class="stat-label">Years coding</span></div>
+            <div class="stat-card"><span class="stat-num">6</span><span class="stat-label">Projects built</span></div>
+            <div class="stat-card"><span class="stat-num">15+</span><span class="stat-label">Technologies</span></div>
           </div>
         </div>
         <div class="about-content">
@@ -105,7 +90,7 @@
           <h2 class="section-headline reveal">From strategy<br>to syntax.</h2>
           <p class="body-text reveal">My path into tech wasn't a straight line — and I think that's what makes me a stronger engineer. I started in marketing, where I learned to understand audiences, communicate value, and think about the <em>why</em> behind a product before touching the <em>how</em>. When I transitioned into software engineering, I brought all of that with me.</p>
           <blockquote class="pull-quote reveal">"I care about the user experience just as much as the code quality."</blockquote>
-          <p class="body-text reveal">Today I'm finishing my BS in Software Engineering at Ferris State University, building full-stack applications with Java and Spring Boot on the backend, and bringing real design sensibility to everything I create on the frontend. I hold a Google UX Design Certificate and love working at the intersection of code and creativity.</p>
+          <p class="body-text reveal">Today I'm finishing my BS in Software Engineering at Ferris State University, building full-stack applications, and bringing real design sensibility to everything I create. I hold a Google UX Design Certificate and love working at the intersection of code and creativity.</p>
           <p class="body-text reveal">I'm actively seeking entry-level software engineering roles where I can keep growing, contribute from day one, and work with teams who care about building things well.</p>
           <div class="about-links reveal">
             <a href="amya-watkins-resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
@@ -116,7 +101,7 @@
     </div>
   </section>
 
-  <!-- ── SKILLS ─────────────────────────────────────────────────────────── -->
+  <!-- SKILLS -->
   <section class="skills section-pad" id="skills">
     <div class="container">
       <div class="skills-header">
@@ -128,96 +113,57 @@
         <div class="skill-group">
           <h3 class="skill-group-title">Languages</h3>
           <div class="chips">
-            <span class="chip">Java</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
-            <span class="chip">SQL</span>
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
+            <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">HTML</span><span class="chip">CSS</span>
           </div>
         </div>
         <div class="skill-group">
           <h3 class="skill-group-title">Frameworks & Libraries</h3>
           <div class="chips">
-            <span class="chip">React</span>
-            <span class="chip">Tailwind CSS</span>
-            <span class="chip">Spring Boot</span>
-            <span class="chip">Vite</span>
+            <span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">Spring Boot</span><span class="chip">Streamlit</span><span class="chip">Vite</span>
           </div>
         </div>
         <div class="skill-group">
           <h3 class="skill-group-title">Backend & Database</h3>
           <div class="chips">
-            <span class="chip">MySQL</span>
-            <span class="chip">AWS Cognito</span>
-            <span class="chip">REST APIs</span>
-            <span class="chip">JWT Auth</span>
-            <span class="chip">Maven</span>
-            <span class="chip">Postman</span>
+            <span class="chip">MySQL</span><span class="chip">AWS Cognito</span><span class="chip">REST APIs</span><span class="chip">JWT Auth</span><span class="chip">Maven</span><span class="chip">Postman</span>
           </div>
         </div>
         <div class="skill-group">
-          <h3 class="skill-group-title">CS Fundamentals</h3>
+          <h3 class="skill-group-title">Data & ML</h3>
           <div class="chips">
-            <span class="chip">OOP</span>
-            <span class="chip">Data Structures</span>
-            <span class="chip">Algorithms</span>
-            <span class="chip">Git / GitHub</span>
+            <span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Pandas</span><span class="chip">Gradient Boosting</span><span class="chip">Decision Trees</span>
           </div>
         </div>
         <div class="skill-group">
           <h3 class="skill-group-title">Design & UX</h3>
           <div class="chips">
-            <span class="chip">Figma</span>
-            <span class="chip">Framer</span>
-            <span class="chip">Canva</span>
-            <span class="chip">User Research</span>
-            <span class="chip">Wireframing</span>
-            <span class="chip">Prototyping</span>
+            <span class="chip">Figma</span><span class="chip">Framer</span><span class="chip">Canva</span><span class="chip">User Research</span><span class="chip">Wireframing</span><span class="chip">Prototyping</span>
           </div>
         </div>
         <div class="skill-group">
           <h3 class="skill-group-title">Tools & Platforms</h3>
           <div class="chips">
-            <span class="chip">VS Code</span>
-            <span class="chip">Jira</span>
-            <span class="chip">Confluence</span>
-            <span class="chip">Slack</span>
-            <span class="chip">QlikSense</span>
+            <span class="chip">Git / GitHub</span><span class="chip">VS Code</span><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Slack</span><span class="chip">QlikSense</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── PROJECTS ───────────────────────────────────────────────────────── -->
+  <!-- PROJECTS -->
   <section class="projects section-pad" id="projects">
     <div class="container">
       <p class="overline reveal">Selected Work</p>
       <div class="projects-header-row">
         <h2 class="section-headline reveal">Projects.</h2>
-        <p class="body-text reveal" style="max-width:320px;text-align:right">Full-stack builds, product design, and frontend development.</p>
+        <p class="body-text reveal" style="max-width:300px;text-align:right">Real builds — frontend, backend, ML, and product design.</p>
       </div>
-
       <div class="projects-grid">
 
-        <!-- FEATURED: Path in Motion -->
+        <!-- 1. PATH IN MOTION — featured -->
         <article class="project-card project-card--featured reveal">
-          <div class="card-visual card-visual--rose">
-            <div class="card-mockup">
-              <div class="cm-bar">
-                <div class="cm-dot"></div><div class="cm-dot"></div><div class="cm-dot"></div>
-                <span class="cm-url">path-in-motion.app</span>
-              </div>
-              <div class="cm-body">
-                <p class="cm-greeting">Good morning, Amya ✦</p>
-                <p class="cm-sub">3 new matches today</p>
-                <div class="cm-row">
-                  <div class="cm-pill">Junior SWE · 94%</div>
-                  <div class="cm-pill">Scholarship · $5K</div>
-                </div>
-              </div>
-            </div>
+          <div class="card-visual card-visual--img" style="background:#0a0a0a;">
+            <img src="img-pathinmotion-logo.png" alt="Path in Motion" class="card-img-cover card-img-contain" />
           </div>
           <div class="card-body">
             <div class="card-meta">
@@ -225,127 +171,112 @@
               <span class="card-status">In Progress</span>
             </div>
             <h3 class="card-title">Path in Motion</h3>
-            <p class="card-desc">An AI-powered career platform designed for early-career professionals — connecting users to jobs, mentors, and scholarships through personalized recommendations. Built mobile-first with an iOS-inspired interface and full product thinking from problem to prototype.</p>
+            <p class="card-desc">An AI-powered career platform connecting early-career professionals to jobs, mentors, and scholarships through personalized recommendations. Built mobile-first with an iOS-inspired interface. I led product design and frontend development end-to-end — from Figma wireframes to React components.</p>
             <div class="card-tags">
               <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Tailwind CSS</span><span class="tag">Figma</span><span class="tag">Product Design</span>
             </div>
             <div class="card-footer">
-              <a href="#" class="card-link">View Project →</a>
-              <a href="https://github.com/watkinsamya" class="card-link-ghost">GitHub →</a>
+              <a href="https://github.com/watkinsamya" target="_blank" class="card-link">View on GitHub →</a>
             </div>
           </div>
         </article>
 
-        <!-- BRG Housing -->
+        <!-- 2. REFRESHED -->
         <article class="project-card reveal delay-1">
-          <div class="card-visual card-visual--sage">
-            <div class="card-icon-wrap">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 20L24 6L42 20V42H30V30H18V42H6V20Z" fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-              <p class="card-icon-label">Web Design · UX</p>
-            </div>
+          <div class="card-visual card-visual--img" style="background:#ff6eb4;">
+            <img src="img-refreshed.png" alt="Refreshed beverage website" class="card-img-cover" />
           </div>
           <div class="card-body">
-            <span class="card-cat">Client Web Project</span>
+            <span class="card-cat">Web Design · Figma</span>
+            <h3 class="card-title">Refreshed</h3>
+            <p class="card-desc">A bold, product-forward website for a beverage brand. Vibrant pink editorial design with interactive product showcase — demonstrating brand identity, visual design, and UX thinking.</p>
+            <div class="card-tags">
+              <span class="tag">Figma</span><span class="tag">Web Design</span><span class="tag">Branding</span><span class="tag">UI/UX</span>
+            </div>
+            <a href="https://www.figma.com/proto/M0G1ARuvJFHCIIFBCPrPlg/Refreshed?t=gepUX2QqzlPqmC2e-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2-2&starting-point-node-id=2%3A2" target="_blank" class="card-link">View Figma Prototype →</a>
+          </div>
+        </article>
+
+        <!-- 3. BRG HOUSING -->
+        <article class="project-card reveal delay-2">
+          <div class="card-visual card-visual--img" style="background:#f5f0e8;">
+            <img src="img-brg-logo.png" alt="BRG Independent Shared Housing" class="card-img-cover card-img-contain card-img-pad" />
+          </div>
+          <div class="card-body">
+            <span class="card-cat">Live Client Website</span>
             <h3 class="card-title">BRG Independent Shared Housing</h3>
-            <p class="card-desc">A client-facing informational website with a guided intake and application flow. Focused on trust-building, clear information architecture, and a visual design that communicates stability and care.</p>
+            <p class="card-desc">A live client website for an independent housing program. Designed the full experience — information architecture, branding, and intake flow — to build trust and guide applicants clearly through the process.</p>
             <div class="card-tags">
-              <span class="tag">UX Design</span><span class="tag">HTML/CSS</span><span class="tag">Branding</span><span class="tag">Web Strategy</span>
+              <span class="tag">Web Design</span><span class="tag">UX</span><span class="tag">Figma</span><span class="tag">Branding</span>
             </div>
-            <a href="#" class="card-link">View Project →</a>
+            <div class="card-footer">
+              <a href="https://www.brghousing.org/" target="_blank" class="card-link">Visit Live Site →</a>
+              <a href="https://www.figma.com/design/K4ulmuQJim8bRvqxgcQxfl/BRG-Independent-Shared-Housing?t=gepUX2QqzlPqmC2e-0" target="_blank" class="card-link-ghost">Figma →</a>
+            </div>
           </div>
         </article>
 
-        <!-- Car Rental API -->
-        <article class="project-card reveal delay-2">
-          <div class="card-visual card-visual--slate">
-            <div class="card-icon-wrap">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6" y="14" width="36" height="24" rx="4" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-                <path d="M6 22h36" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-                <circle cx="14" cy="32" r="3" fill="rgba(255,255,255,0.5)"/>
-                <circle cx="34" cy="32" r="3" fill="rgba(255,255,255,0.5)"/>
-              </svg>
-              <p class="card-icon-label">Java · Spring Boot</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <span class="card-cat">Backend Development</span>
-            <h3 class="card-title">Car Rental Service API</h3>
-            <p class="card-desc">A fully functional REST API built with Java and Spring Boot. Covers CRUD operations, MySQL database integration, Postman-tested endpoints, and proper relational data modeling for a vehicle rental system.</p>
-            <div class="card-tags">
-              <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">REST API</span>
-            </div>
-            <a href="#" class="card-link">View Project →</a>
-          </div>
-        </article>
-
-        <!-- Fraud Detection -->
+        <!-- 4. STUDENT SUCCESS -->
         <article class="project-card reveal delay-1">
-          <div class="card-visual card-visual--amber">
-            <div class="card-icon-wrap">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 36 L16 22 L24 28 L32 14 L40 20" stroke="rgba(255,255,255,0.8)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                <circle cx="16" cy="22" r="3" fill="rgba(255,255,255,0.5)"/>
-                <circle cx="32" cy="14" r="3" fill="rgba(255,255,255,0.5)"/>
-              </svg>
-              <p class="card-icon-label">Python · ML</p>
-            </div>
+          <div class="card-visual card-visual--img" style="background:#1a1a2e;">
+            <img src="img-student-success.png" alt="Student Success ML model results" class="card-img-cover card-img-contain card-img-pad-dark" />
           </div>
           <div class="card-body">
-            <span class="card-cat">Machine Learning</span>
-            <h3 class="card-title">Fraud Detection Model</h3>
-            <p class="card-desc">A Python ML project using scikit-learn to classify financial transactions as fraudulent or legitimate. Covers data preprocessing, feature engineering, decision tree modeling, and model evaluation.</p>
+            <span class="card-cat">Machine Learning · Python</span>
+            <h3 class="card-title">Student Success Predictor</h3>
+            <p class="card-desc">A Streamlit ML app that predicts student academic risk and final grades using two datasets and four model types. Best model (Gradient Boosting) achieved R² of 0.855. Built end-to-end with XGBoost, scikit-learn, and Pandas.</p>
             <div class="card-tags">
-              <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span><span class="tag">ML</span>
+              <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Streamlit</span><span class="tag">Pandas</span>
             </div>
-            <a href="#" class="card-link">View Project →</a>
+            <a href="https://github.com/watkinsamya" target="_blank" class="card-link">View on GitHub →</a>
           </div>
         </article>
 
-        <!-- AWS Cognito -->
+        <!-- 5. MINDNEST -->
         <article class="project-card reveal delay-2">
+          <div class="card-visual card-visual--mint">
+            <div class="card-icon-wrap">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <path d="M26 8C16.06 8 8 16.06 8 26s8.06 18 18 18 18-8.06 18-18S35.94 8 26 8z" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
+                <path d="M20 24c0-3.314 2.686-6 6-6s6 2.686 6 6c0 2.8-1.7 5.1-4 6.1V36h-4v-5.9C21.7 29.1 20 26.8 20 24z" fill="rgba(255,255,255,0.5)"/>
+              </svg>
+              <p class="card-icon-label">UX Design · Complete</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-cat">UX Design</span>
+              <span class="card-status card-status--complete">Complete</span>
+            </div>
+            <h3 class="card-title">MindNest 2.0</h3>
+            <p class="card-desc">A fully designed mental health web app built in Figma. Helps users journal, track emotional patterns, and access curated wellness resources in a safe, beautiful space. Complete prototype with full user flows and screens.</p>
+            <div class="card-tags">
+              <span class="tag">Figma</span><span class="tag">UX Design</span><span class="tag">Prototyping</span><span class="tag">User Research</span>
+            </div>
+            <a href="https://www.figma.com/proto/JtMmthD0biKAElpL1CXA2i/Good-Health-and-Well-being?node-id=1-3&p=f&t=gepUX2QqzlPqmC2e-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" class="card-link">View Figma Prototype →</a>
+          </div>
+        </article>
+
+        <!-- 6. AWS COGNITO -->
+        <article class="project-card reveal delay-3">
           <div class="card-visual card-visual--plum">
             <div class="card-icon-wrap">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="14" y="20" width="20" height="16" rx="3" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-                <path d="M17 20V16a7 7 0 0114 0v4" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="24" cy="28" r="2.5" fill="rgba(255,255,255,0.7)"/>
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <rect x="15" y="22" width="22" height="18" rx="3" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.65)" stroke-width="2"/>
+                <path d="M18 22V18a8 8 0 0116 0v4" stroke="rgba(255,255,255,0.65)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="26" cy="31" r="3" fill="rgba(255,255,255,0.75)"/>
               </svg>
-              <p class="card-icon-label">Java · AWS · JWT</p>
+              <p class="card-icon-label">Java · Spring Boot · AWS</p>
             </div>
           </div>
           <div class="card-body">
-            <span class="card-cat">Backend / Security</span>
+            <span class="card-cat">Backend · Security</span>
             <h3 class="card-title">AWS Cognito Auth System</h3>
-            <p class="card-desc">A Spring Boot application implementing production-style authentication with AWS Cognito, JWT token handling, and role-based access control using profile enums — demonstrating real-world security patterns.</p>
+            <p class="card-desc">A Spring Boot application implementing production-style authentication with AWS Cognito, JWT token handling, and role-based access control using profile enums — demonstrating real-world security patterns used in enterprise applications.</p>
             <div class="card-tags">
               <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">AWS Cognito</span><span class="tag">JWT</span>
             </div>
-            <a href="#" class="card-link">View Project →</a>
-          </div>
-        </article>
-
-        <!-- MindNest Coming Soon -->
-        <article class="project-card project-card--soon reveal delay-3">
-          <div class="card-visual card-visual--mint">
-            <div class="card-icon-wrap">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8z" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-                <path d="M18 22c0-3.314 2.686-6 6-6s6 2.686 6 6c0 2.5-1.5 4.5-3.5 5.5V32h-5v-4.5C19.5 26.5 18 24.5 18 22z" fill="rgba(255,255,255,0.4)"/>
-              </svg>
-              <p class="card-icon-label">Coming Soon</p>
-            </div>
-          </div>
-          <div class="card-body">
-            <span class="card-cat soon-cat">Future Vision</span>
-            <h3 class="card-title">MindNest 2.0</h3>
-            <p class="card-desc">A personalized mental health web app that combines software engineering and UX design — helping users journal, track patterns, and access curated resources in a beautifully designed, safe space.</p>
-            <div class="card-tags">
-              <span class="tag">React</span><span class="tag">UX Design</span><span class="tag">Full Stack</span><span class="tag">Concept</span>
-            </div>
-            <span class="card-coming">In Planning ✦</span>
+            <a href="https://github.com/watkinsamya" target="_blank" class="card-link">View on GitHub →</a>
           </div>
         </article>
 
@@ -353,7 +284,7 @@
     </div>
   </section>
 
-  <!-- ── CASE STUDY ─────────────────────────────────────────────────────── -->
+  <!-- CASE STUDY -->
   <section class="case-study section-pad" id="case-study">
     <div class="container">
       <p class="overline reveal">Deep Dive</p>
@@ -362,15 +293,15 @@
         <div class="case-details reveal">
           <div class="case-block">
             <h4 class="case-label">The Problem</h4>
-            <p class="body-text">Early-career professionals — especially first-gen students and career changers — have no single platform that brings together job discovery, mentorship access, and scholarship information. Job boards feel overwhelming. Mentorship is inaccessible. There's no personalization.</p>
+            <p class="body-text">Early-career professionals — especially first-gen students and career changers — have no single platform bringing together job discovery, mentorship, and scholarships. Job boards feel overwhelming. Mentorship is inaccessible.</p>
           </div>
           <div class="case-block">
             <h4 class="case-label">My Solution</h4>
-            <p class="body-text">A mobile-first web app with AI-powered matching that surfaces personalized opportunities and connects users to mentors in their field — all wrapped in an interface that feels as intuitive as the apps they already love.</p>
+            <p class="body-text">A mobile-first web app with AI-powered matching that surfaces personalized opportunities and connects users to mentors — wrapped in an interface that feels as intuitive as the apps users already love.</p>
           </div>
           <div class="case-block">
             <h4 class="case-label">My Role</h4>
-            <p class="body-text">I led product design and frontend development end-to-end — defining the information architecture, designing the UI in Figma with an iOS-inspired aesthetic, and building the frontend with React + Vite + Tailwind CSS.</p>
+            <p class="body-text">Led product design and frontend development end-to-end — defined the information architecture, designed in Figma with an iOS-inspired aesthetic, and built with React + Vite + Tailwind CSS.</p>
           </div>
           <div class="case-block">
             <h4 class="case-label">Stack</h4>
@@ -378,14 +309,12 @@
               <span class="chip">React</span><span class="chip">Vite</span><span class="chip">Tailwind CSS</span><span class="chip">Figma</span>
             </div>
           </div>
-          <a href="#" class="btn-primary" style="margin-top:12px;display:inline-block">View Full Project →</a>
+          <a href="https://github.com/watkinsamya" target="_blank" class="btn-primary" style="margin-top:16px;display:inline-block">View on GitHub →</a>
         </div>
         <div class="case-screen-wrap reveal delay-2">
           <div class="case-screen">
             <div class="cs-bar">
-              <div class="cs-dot cs-dot--r"></div>
-              <div class="cs-dot cs-dot--y"></div>
-              <div class="cs-dot cs-dot--g"></div>
+              <div class="cs-dot cs-dot--r"></div><div class="cs-dot cs-dot--y"></div><div class="cs-dot cs-dot--g"></div>
               <span class="cs-url">path-in-motion.app/dashboard</span>
             </div>
             <div class="cs-body">
@@ -422,7 +351,7 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ────────────────────────────────────────────────────────── -->
+  <!-- CONTACT -->
   <section class="contact section-pad" id="contact">
     <div class="container">
       <div class="contact-inner">
@@ -430,11 +359,11 @@
         <h2 class="section-headline reveal" style="text-align:center">Let's build something great.</h2>
         <p class="body-text reveal" style="text-align:center;max-width:500px;margin:0 auto 40px">I'm looking for entry-level software engineering roles and open to internships, freelance projects, and collaborations. If my work resonates with you, I'd love to connect.</p>
         <div class="contact-btns reveal">
-          <a href="mailto:watkinsamya03@gmail.com" class="btn-primary">Say Hello →</a>
+          <a href="mailto:amyawatkins@email.com" class="btn-primary">Say Hello →</a>
           <a href="https://www.linkedin.com/in/amya-watkins" target="_blank" class="btn-outline">LinkedIn</a>
           <a href="https://github.com/watkinsamya" target="_blank" class="btn-outline">GitHub</a>
         </div>
-        <p class="contact-email reveal">watkinsamya03@gmail.com</p>
+        <p class="contact-email reveal">amyawatkins@email.com</p>
       </div>
     </div>
     <div class="contact-deco">
@@ -443,14 +372,12 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <span class="footer-logo">Amya Watkins</span>
       <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#projects">Work</a><a href="#contact">Contact</a>
       </div>
       <span class="footer-copy">© 2025 · Designed & built with intention.</span>
     </div>
