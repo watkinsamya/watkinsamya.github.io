@@ -1,3 +1,10 @@
+/* ═══════════════════════════════════════════════════════════════
+   AMYA WATKINS PORTFOLIO — style.css
+   Palette: Warm White · Blush · Rose · Plum · Warm Gray
+   Fonts:   Cormorant Garamond (display) · DM Sans (body)
+═══════════════════════════════════════════════════════════════ */
+
+/* ── RESET & TOKENS ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -40,7 +47,7 @@ body {
   overflow-x: hidden;
 }
 
-
+/* ── UTILITIES ──────────────────────────────────────────────── */
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -78,7 +85,7 @@ body {
   margin-bottom: 18px;
 }
 
-
+/* ── BUTTONS ────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-block;
   background: var(--rose);
@@ -123,7 +130,7 @@ body {
 }
 .btn-ghost:hover { color: var(--rose); border-color: var(--rose); }
 
-
+/* ── CHIPS ──────────────────────────────────────────────────── */
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 
 .chip {
@@ -139,7 +146,7 @@ body {
 }
 .chip:hover { border-color: var(--rose-light); color: var(--rose); }
 
-
+/* ── SCROLL REVEAL ──────────────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -152,7 +159,9 @@ body {
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
 
-
+/* ══════════════════════════════════════════════════════════════
+   NAVIGATION
+══════════════════════════════════════════════════════════════ */
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -246,7 +255,9 @@ body {
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-
+/* ══════════════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════════════ */
 .hero {
   min-height: 100svh;
   display: flex;
@@ -297,7 +308,7 @@ body {
   border-radius: var(--radius-pill);
 }
 
-
+/* Hero visual */
 .hero-visual {
   position: relative;
   height: 420px;
@@ -349,7 +360,7 @@ body {
 .hc-prop    { color: var(--warm-gray); }
 .hc-str     { color: #059669; }
 
-
+/* Floating tags */
 .hero-float {
   position: absolute;
   z-index: 3;
@@ -400,7 +411,9 @@ body {
   50%      { opacity: 1;   transform: scaleY(1.1); }
 }
 
-
+/* ══════════════════════════════════════════════════════════════
+   ABOUT
+══════════════════════════════════════════════════════════════ */
 .about { background: var(--warm-white); }
 
 .about-grid {
@@ -476,7 +489,9 @@ body {
 
 .about-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 30px; }
 
-
+/* ══════════════════════════════════════════════════════════════
+   SKILLS
+══════════════════════════════════════════════════════════════ */
 .skills { background: var(--blush); }
 
 .skills-header { margin-bottom: 48px; }
@@ -498,7 +513,9 @@ body {
   margin-bottom: 16px;
 }
 
-
+/* ══════════════════════════════════════════════════════════════
+   PROJECTS
+══════════════════════════════════════════════════════════════ */
 .projects { background: var(--warm-white); }
 
 .projects-header-row {
@@ -515,7 +532,7 @@ body {
   gap: 22px;
 }
 
-
+/* Project Card */
 .project-card {
   background: var(--white);
   border: 1px solid var(--ivory);
@@ -532,7 +549,7 @@ body {
 .project-card--featured { grid-column: span 2; flex-direction: row; }
 .project-card--soon { opacity: 0.85; }
 
-
+/* Card visual headers */
 .card-visual {
   display: flex;
   align-items: center;
@@ -549,7 +566,7 @@ body {
 .card-visual--plum  { background: linear-gradient(135deg, #9080A0 0%, #5A4068 100%); }
 .card-visual--mint  { background: linear-gradient(135deg, #A0C8C0 0%, #60A090 100%); }
 
-
+/* Real image cards */
 .card-visual--img { padding: 0; overflow: hidden; }
 .card-img-cover {
   width: 100%;
@@ -584,7 +601,7 @@ body {
 .card-icon-wrap { text-align: center; }
 .card-icon-label { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 12px; font-weight: 500; }
 
-
+/* Featured card mockup */
 .card-mockup {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -666,7 +683,9 @@ body {
 
 .card-coming { font-size: 13px; color: #4A8A6A; font-weight: 500; margin-top: auto; display: block; }
 
-
+/* ══════════════════════════════════════════════════════════════
+   CASE STUDY
+══════════════════════════════════════════════════════════════ */
 .case-study { background: var(--blush); }
 
 .case-grid {
@@ -693,7 +712,7 @@ body {
   margin-bottom: 10px;
 }
 
-
+/* Case study screen mockup */
 .case-screen {
   background: var(--white);
   border: 1px solid var(--ivory);
@@ -761,7 +780,9 @@ body {
 .cs-progress { height: 4px; background: var(--ivory); border-radius: 2px; margin-top: 10px; overflow: hidden; }
 .cs-bar-fill  { height: 100%; background: var(--rose); border-radius: 2px; }
 
-
+/* ══════════════════════════════════════════════════════════════
+   CONTACT
+══════════════════════════════════════════════════════════════ */
 .contact {
   background: var(--warm-white);
   position: relative;
@@ -789,7 +810,9 @@ body {
 .deco-circle--1 { width: 400px; height: 400px; top: -100px; right: -100px; opacity: 0.6; }
 .deco-circle--2 { width: 260px; height: 260px; bottom: -80px; left: -60px; opacity: 0.4; }
 
-
+/* ══════════════════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════════════════ */
 .footer { background: var(--plum); padding: 36px 0; }
 .footer-inner {
   display: flex;
@@ -804,7 +827,9 @@ body {
 .footer-links a:hover { color: rgba(255,255,255,0.85); }
 .footer-copy { font-size: 12px; color: rgba(255,255,255,0.35); }
 
-
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
@@ -857,7 +882,7 @@ body {
   .about-stat-cards { grid-template-columns: repeat(3, 1fr); }
 }
 
-
+/* ── ML CHART CARD VISUAL ──────────────────────────────────── */
 .card-visual--ml {
   background: linear-gradient(135deg, #1a1a2e 0%, #2d2050 100%);
   display: flex;
@@ -885,7 +910,7 @@ body {
 .ml-bar-fill span { font-size: 10px; color: white; font-weight: 500; white-space: nowrap; }
 .ml-label { font-size: 10px; color: rgba(255,255,255,0.4); text-align: center; margin-top: 12px; font-family: 'DM Sans', sans-serif; letter-spacing: 0.05em; }
 
-
+/* ── REFRESHED CARD VISUAL ─────────────────────────────────── */
 .card-visual--refreshed {
   background: linear-gradient(135deg, #FF8DC7 0%, #FF4DA6 100%);
   display: flex;

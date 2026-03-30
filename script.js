@@ -1,3 +1,8 @@
+/* ═══════════════════════════════════════════════════════════════
+   AMYA WATKINS PORTFOLIO — script.js
+═══════════════════════════════════════════════════════════════ */
+
+/* ── SCROLL REVEAL ──────────────────────────────────────────── */
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -11,7 +16,7 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-
+/* ── NAV: scroll shadow + active link ──────────────────────── */
 const nav = document.getElementById('nav');
 
 window.addEventListener('scroll', () => {
@@ -22,7 +27,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+/* ── NAV: mobile toggle ─────────────────────────────────────── */
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
@@ -31,7 +36,7 @@ navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-
+// Close mobile menu on link click
 navLinks.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     navToggle.classList.remove('open');
@@ -39,7 +44,7 @@ navLinks.querySelectorAll('a').forEach((link) => {
   });
 });
 
-
+/* ── SMOOTH SCROLL for anchor links ────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -52,7 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-
+/* ── ACTIVE NAV LINK on scroll ──────────────────────────────── */
 const sections = document.querySelectorAll('section[id], div[id]');
 const navLinkEls = document.querySelectorAll('.nav-link');
 
@@ -75,7 +80,7 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
-
+/* ── STAGGER project cards on scroll ───────────────────────── */
 const cards = document.querySelectorAll('.project-card');
 cards.forEach((card, i) => {
   card.style.transitionDelay = `${i * 0.07}s`;
