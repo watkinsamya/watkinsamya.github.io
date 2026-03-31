@@ -424,7 +424,7 @@ body {
 }
 
 .about-img-frame {
-  background: var(--blush);
+  background: transparent;
   border-radius: var(--radius-lg);
   height: 400px;
   display: flex;
@@ -433,22 +433,20 @@ body {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(44,31,41,0.08);
 }
-.about-img-frame::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, var(--rose-light) 0%, var(--blush) 60%);
-  opacity: 0.5;
-}
-.about-initials {
-  font-family: var(--font-display);
-  font-size: 90px;
-  font-weight: 500;
-  color: var(--rose);
+
+.about-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
   position: relative;
-  z-index: 1;
-  opacity: 0.7;
+  z-index: 2;
+  opacity: 1 !important;
+  filter: none !important;
+  border-radius: var(--radius-lg);
 }
 
 .about-stat-cards {
@@ -456,6 +454,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
 .stat-card {
   background: var(--white);
   border: 1px solid var(--ivory);
@@ -463,6 +462,7 @@ body {
   padding: 16px 12px;
   text-align: center;
 }
+
 .stat-num {
   display: block;
   font-family: var(--font-display);
@@ -470,6 +470,7 @@ body {
   font-weight: 500;
   color: var(--rose);
 }
+
 .stat-label {
   font-size: 11px;
   color: var(--warm-gray);
@@ -487,7 +488,14 @@ body {
   line-height: 1.45;
 }
 
-.about-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 30px; }
+.about-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
 
 /* ══════════════════════════════════════════════════════════════
    SKILLS
